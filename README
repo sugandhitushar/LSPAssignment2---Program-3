@@ -1,0 +1,27 @@
+NAME - program.c
+
+USAGE - 
+$ make
+$ make run
+
+DESCRIPTION - 
+Creates 3 processes as Child 1 Child 2 and Child 3 using fork() from the parent process.
+
+Example -
+$ make
+gcc -c program.c
+gcc -o nestedFork program.o
+
+$ make run
+./nestedFork
+Parent:: pid=5343
+Child1:: Created
+Child1:: pid=5344
+Child1:: Terminating
+Child2:: Created
+Child2:: pid=5345
+Child3:: Created
+Child3:: pid=5346
+Child2:: Terminating
+Child3:: Terminating
+
